@@ -16,3 +16,19 @@ class Pet(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
     species = db.Column(db.String)
+
+class User(db.Model):
+    __tablename__ = 'users'
+
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String)
+    password = db.Column(db.String)
+
+
+
+
+
+    # important steps...
+    #flask db init
+    #flask db migrate -m "blaahh"
+    #flask db upgrade
